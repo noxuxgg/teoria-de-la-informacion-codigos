@@ -8,12 +8,18 @@ def ficticio(r, vector):
     res = izq - q
     return res
 
-
-
-
-
-
-
+def sumar_r(r, vector):
+    print(vector)
+    while r != len(vector):
+        suma = 0
+        cont = 0
+        while cont != r:
+            suma = suma + vector[0]
+            vector.pop(0)    
+            cont = cont + 1
+        vector.append(round(suma,5))
+        vector.sort()
+        print(vector)
 
 r = int(input("Ingrese el numero de la fuente: "))
 vector_fuente = []
@@ -26,7 +32,9 @@ vector_prob = []
 for i in range(1, s+1):
     p = float(input("Ingrese la probabilida de S"+str(i)+': '))
     vector_prob.append(p)
+print("Fuente: ",vector_fuente)
+for i in range(0,ficticio(r,vector_prob)):
+    vector_prob.append(0)
 vector_prob.sort()
-print(vector_fuente)
-print(vector_prob)
-print(ficticio(r,vector_prob))
+print("Suma r: ")
+sumar_r(r, vector_prob)
