@@ -1,3 +1,4 @@
+# By Freddy Fernando Huanca Irahola
 def ficticio(r, vector):
     q = len(vector)
     izq = 0
