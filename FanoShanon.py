@@ -50,4 +50,4 @@ vector_prob.sort(reverse=True)
 codigos = shannon_fano_r(vector_prob, alfabeto)
 
 print("\nCódigos Fano-Shanon")
-print(codigos)
+print("X = ",codigos)

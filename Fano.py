@@ -28,6 +28,5 @@ for i in range(1, r + 1):
     vector_fuente.append(m)
 s = int(input("Ingrese el numero de simbolos: "))
 codigos = generar_codigos(vector_fuente, s)
-print("\nCódigos generados:")
+print("\nCódigos Fano:")
 print("X =", codigos)
-raiz = Nodo("INICIO")
